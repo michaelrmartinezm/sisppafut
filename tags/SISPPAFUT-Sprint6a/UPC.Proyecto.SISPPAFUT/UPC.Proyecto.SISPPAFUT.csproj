@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66004B7B-1699-4CE8-9EC6-1124D72C5D14}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UPC.Proyecto.SISPPAFUT</RootNamespace>
+    <AssemblyName>UPC.Proyecto.SISPPAFUT</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IKVM.OpenJDK.Core, Version=7.0.4335.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\IKVM.OpenJDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.SwingAWT, Version=7.0.4335.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\IKVM.OpenJDK.SwingAWT.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Text, Version=7.0.4335.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\IKVM.OpenJDK.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Util, Version=7.0.4335.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\IKVM.OpenJDK.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime, Version=7.0.4335.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\IKVM.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="weka, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\weka.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmActualizarRanking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActualizarRanking.Designer.cs">
+      <DependentUpon>frmActualizarRanking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmApostadorVerPronosticos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmApostadorVerPronosticos.Designer.cs">
+      <DependentUpon>frmApostadorVerPronosticos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarHistorialJugador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarHistorialJugador.Designer.cs">
+      <DependentUpon>frmConsultarHistorialJugador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarDatosPartido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarDatosPartido.Designer.cs">
+      <DependentUpon>frmEditarDatosPartido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAsignarJugadoresaEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAsignarJugadoresaEquipo.Designer.cs">
+      <DependentUpon>frmAsignarJugadoresaEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarEquipo.Designer.cs">
+      <DependentUpon>frmEditarEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarJugador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarJugador.Designer.cs">
+      <DependentUpon>frmEditarJugador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertarTransferenciaJugador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertarTransferenciaJugador.Designer.cs">
+      <DependentUpon>frmInsertarTransferenciaJugador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertarUsuario.Designer.cs">
+      <DependentUpon>frmInsertarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListarEntrenadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListarEntrenadores.Designer.cs">
+      <DependentUpon>frmListarEntrenadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListarLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListarLog.Designer.cs">
+      <DependentUpon>frmListarLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModuloEntrenamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModuloEntrenamiento.Designer.cs">
+      <DependentUpon>frmModuloEntrenamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarEstadisticasEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarEstadisticasEquipo.Designer.cs">
+      <DependentUpon>frmConsultarEstadisticasEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertarJugador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertarJugador.Designer.cs">
+      <DependentUpon>frmInsertarJugador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaPartidosSinJugar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaPartidosSinJugar.Designer.cs">
+      <DependentUpon>frmConsultaPartidosSinJugar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertarPartido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertarPartido.Designer.cs">
+      <DependentUpon>frmInsertarPartido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarRankingMundial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarRankingMundial.Designer.cs">
+      <DependentUpon>frmConsultarRankingMundial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarAsociacionRolFuncionalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarAsociacionRolFuncionalidad.Designer.cs">
+      <DependentUpon>frmRegistrarAsociacionRolFuncionalidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarAsociacionRolUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarAsociacionRolUsuario.Designer.cs">
+      <DependentUpon>frmRegistrarAsociacionRolUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarAsociacionUsuarioFuncionalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarAsociacionUsuarioFuncionalidad.Designer.cs">
+      <DependentUpon>frmRegistrarAsociacionUsuarioFuncionalidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertarEntrenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertarEntrenador.Designer.cs">
+      <DependentUpon>frmInsertarEntrenador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarFuncionalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarFuncionalidad.Designer.cs">
+      <DependentUpon>frmRegistrarFuncionalidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarPronostico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarPronostico.Designer.cs">
+      <DependentUpon>frmRegistrarPronostico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarRol.Designer.cs">
+      <DependentUpon>frmRegistrarRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTablaPosiciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTablaPosiciones.Designer.cs">
+      <DependentUpon>frmTablaPosiciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funciones.cs" />
+    <Compile Include="RedNeuronal.cs" />
+    <Compile Include="SISPPAFUTlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SISPPAFUTlogin.Designer.cs">
+      <DependentUpon>SISPPAFUTlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertarCompeticion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertarCompeticion.Designer.cs">
+      <DependentUpon>frmInsertarCompeticion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertarEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertarEquipo.Designer.cs">
+      <DependentUpon>frmInsertarEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertarEstadio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertarEstadio.Designer.cs">
+      <DependentUpon>frmInsertarEstadio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertarLiga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertarLiga.Designer.cs">
+      <DependentUpon>frmInsertarLiga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertarPais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertarPais.designer.cs">
+      <DependentUpon>frmInsertarPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SISPPAFUTmdiPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SISPPAFUTmdiPrincipal.Designer.cs">
+      <DependentUpon>SISPPAFUTmdiPrincipal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmActualizarRanking.resx">
+      <DependentUpon>frmActualizarRanking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmApostadorVerPronosticos.resx">
+      <DependentUpon>frmApostadorVerPronosticos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarHistorialJugador.resx">
+      <DependentUpon>frmConsultarHistorialJugador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarDatosPartido.resx">
+      <DependentUpon>frmEditarDatosPartido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAsignarJugadoresaEquipo.resx">
+      <DependentUpon>frmAsignarJugadoresaEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertarCompeticion.resx">
+      <DependentUpon>frmInsertarCompeticion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarEquipo.resx">
+      <DependentUpon>frmEditarEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarJugador.resx">
+      <DependentUpon>frmEditarJugador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertarTransferenciaJugador.resx">
+      <DependentUpon>frmInsertarTransferenciaJugador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertarUsuario.resx">
+      <DependentUpon>frmInsertarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListarEntrenadores.resx">
+      <DependentUpon>frmListarEntrenadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListarLog.resx">
+      <DependentUpon>frmListarLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModuloEntrenamiento.resx">
+      <DependentUpon>frmModuloEntrenamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertarEquipo.resx">
+      <DependentUpon>frmInsertarEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertarEstadio.resx">
+      <DependentUpon>frmInsertarEstadio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarEstadisticasEquipo.resx">
+      <DependentUpon>frmConsultarEstadisticasEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertarJugador.resx">
+      <DependentUpon>frmInsertarJugador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertarLiga.resx">
+      <DependentUpon>frmInsertarLiga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaPartidosSinJugar.resx">
+      <DependentUpon>frmConsultaPartidosSinJugar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertarPartido.resx">
+      <DependentUpon>frmInsertarPartido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarRankingMundial.resx">
+      <DependentUpon>frmConsultarRankingMundial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarAsociacionRolFuncionalidad.resx">
+      <DependentUpon>frmRegistrarAsociacionRolFuncionalidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarAsociacionRolUsuario.resx">
+      <DependentUpon>frmRegistrarAsociacionRolUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarAsociacionUsuarioFuncionalidad.resx">
+      <DependentUpon>frmRegistrarAsociacionUsuarioFuncionalidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertarEntrenador.resx">
+      <DependentUpon>frmInsertarEntrenador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarFuncionalidad.resx">
+      <DependentUpon>frmRegistrarFuncionalidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarPronostico.resx">
+      <DependentUpon>frmRegistrarPronostico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarRol.resx">
+      <DependentUpon>frmRegistrarRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTablaPosiciones.resx">
+      <DependentUpon>frmTablaPosiciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SISPPAFUTlogin.resx">
+      <DependentUpon>SISPPAFUTlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertarPais.resx">
+      <DependentUpon>frmInsertarPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SISPPAFUTmdiPrincipal.resx">
+      <DependentUpon>SISPPAFUTmdiPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="imagenes\correcto.png" />
+    <Content Include="imagenes\eliminar.png" />
+    <Content Include="imagenes\incorrecto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UPC.Proyecto.SISPPAFUT.BL.BC\UPC.Proyecto.SISPPAFUT.BL.BC.csproj">
+      <Project>{324A488E-99D2-4B95-9E4A-9B6097E923BC}</Project>
+      <Name>UPC.Proyecto.SISPPAFUT.BL.BC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UPC.Proyecto.SISPPAFUT.BL.BE\UPC.Proyecto.SISPPAFUT.BL.BE.csproj">
+      <Project>{4C03FE03-0DF0-4CC7-911E-67D851251B27}</Project>
+      <Name>UPC.Proyecto.SISPPAFUT.BL.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UPC.Seguridad.BL.BC\UPC.Seguridad.BL.BC.csproj">
+      <Project>{D5FF63C2-6D83-4998-8766-2AB46151DEAD}</Project>
+      <Name>UPC.Seguridad.BL.BC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UPC.Seguridad.BL.BE\UPC.Seguridad.BL.BE.csproj">
+      <Project>{074D8A53-5320-4564-94A9-87CEC4454FBE}</Project>
+      <Name>UPC.Seguridad.BL.BE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
